@@ -1,0 +1,14 @@
+diff --git a/include/configs/mx6sabre_common.h b/include/configs/mx6sabre_common.h
+index 53c9f05..d31e961 100644
+--- a/include/configs/mx6sabre_common.h
++++ b/include/configs/mx6sabre_common.h
+@@ -238,4 +238,6 @@
+ #define CONFIG_USB_FUNCTION_MASS_STORAGE
+ #endif
+ 
++#include "update_common.h"
++
+ #endif                         /* __MX6QSABRE_COMMON_CONFIG_H */
+-- 
+2.7.4
+

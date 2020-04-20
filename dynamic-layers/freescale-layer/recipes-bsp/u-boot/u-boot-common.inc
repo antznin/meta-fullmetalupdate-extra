@@ -2,8 +2,8 @@
 # Released under the MIT license (see COPYING.MIT for the terms)
 FILESEXTRAPATHS_prepend := "${THISDIR}/${MACHINE}:${THISDIR}/files:"
 
-SRC_URI_append = "file://update_common.h"
-SRC_URI_append_imx6qdlsabresd = " file://mx6sabresd_update.patch"
+SRC_URI_append = " file://update_common.h"
+SRC_URI_append_imx6qdlsabresd = " file://0001-Update-mx6-header.patch"
 
 S = "${WORKDIR}/git"
 
