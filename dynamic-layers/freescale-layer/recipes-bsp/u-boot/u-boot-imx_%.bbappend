@@ -2,7 +2,7 @@
 # Released under the MIT license (see COPYING.MIT for the terms)
 FILESEXTRAPATHS_prepend := "${THISDIR}/${MACHINE}:${THISDIR}/files:"
 
-require ${PN}_${MACHINE}.inc
+include ${PN}_${MACHINE}.inc
 
 SRC_URI_append_imx8mqevk = " \
     file://fullmetalupdate.bmp \
