@@ -24,3 +24,8 @@ TMPDIR = "${TOPDIR}/tmp/${DISTRO}"
 
 HAWKBIT_CONFIG_FILE ?= "/home/docker/config.cfg"
 OSTREE_BRANCHNAME ?= "fullmetalupdate-os-${MACHINE}"
+OSTREE_DEPLOY_DEVICETREE = "1"
+
+# We use linux-imx on dunfell, the reason being that linux-fslc crashes at initialization
+IMX_DEFAULT_BSP = "nxp"
+PREFERRED_PROVIDER_virtual/kernel = "linux-imx"

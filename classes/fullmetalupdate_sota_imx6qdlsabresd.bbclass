@@ -1,6 +1,5 @@
 # Copyright (C) 2019 Witekio
 # Released under the MIT license (see COPYING.MIT for the terms)
-require conf/machine/include/utilities.inc
 
 EXTRA_IMAGEDEPENDS_append_sota = " imx-bootfiles"
 
@@ -15,3 +14,5 @@ OSTREE_BOOTLOADER ?= "u-boot"
 OSTREE_KERNEL_ARGS ?= "rw rootwait console=ttymxc0,115200"
 
 IMAGE_FSTYPES_remove_sota = "garagesign garagecheck"
+
+INITRAMFS_FSTYPES = 'cpio.gz.u-boot'
