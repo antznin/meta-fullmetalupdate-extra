@@ -4,4 +4,5 @@ FILESEXTRAPATHS_prepend := "${THISDIR}/${MACHINE}:"
 
 SRC_URI_append_imx6qdlsabresd = " \
     file://runc_config.cfg \
+    file://graphical.cfg \
 "
